@@ -22,7 +22,7 @@ Modify `twitter_key_model.py` with your own keys and save as `twitter_key.py`.
 ```bash
 crontab -e
 # copy the following line: 
-# */15 * * * * /path/to/python3 /absolute/path/to/PingPong/PingPong.py
+# 0 6 * * * /path/to/python3 /absolute/path/to/WakeUp/WakeUp.py
 # Ctrl + S Ctrl + X
 crontab -l
 # this one is helpful to check on cron jobs: 

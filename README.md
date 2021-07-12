@@ -1,28 +1,31 @@
 # WakeUp
-<!-- Just a twitter bot that replies "pong" when you mention it in a twwet that contains "ping" ou "Ping"
- -->
+WakeUp is a Twitter bot that greets your followers and indicates the date and local hour in Paris.
+
+Please visit https://twitter.com/E_Dmz_Bot and https://twitter.com/E_Dmz for more.
+
 ## Prequisites
-<!-- * Have a https://developer.twitter.com/en/portal/dashboard
+* Having write and read keys for @your_bot https://developer.twitter.com/en/portal/dashboard 
 
-* jupyter 
+* Python 3 with python-twitter library 
 
-* python-twitter library 
+* CRON (i'm running it on Ubuntu 20)
 
-* nbconvert
 ## Installation
-
+### 1. Clone repo
 ```bash 
-git clone https://github.com/E-Dmz/PingPong.git
+git clone https://github.com/E-Dmz/WakeUp.git
 ```
+### 2. Manage your keys
+Modify `twitter_key_model.py` with your own keys and save as `twitter_key.py`.
 
-Modify `my_package/twitter_key_model.py` with your own keys and save as `my_package/twitter_key.py`.
-
-Automate:
-
+### 3. Set up a CRON job
 ```bash
-echo "jupyter nbconvert --to notebook --execute ~/TwitterBot/PingPong/PingPong.ipynb" > ~/TwitterBot/PingPongScript.sh
 crontab -e
-# copy */1 * * * * ~/TwitterBot/PingPong/PingPongScript.sh
-# ^S ^X
+# copy the following line: 
+# */15 * * * * /path/to/python3 /absolute/path/to/PingPong/PingPong.py
+# Ctrl + S Ctrl + X
+crontab -l
+# this one is helpful to check on cron jobs: 
+grep CRON /var/log/syslog
 ```
- -->
+

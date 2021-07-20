@@ -16,7 +16,7 @@ Please visit https://twitter.com/E_Dmz_Bot and https://twitter.com/E_Dmz for mor
 git clone https://github.com/E-Dmz/WakeUp.git
 ```
 ### 2. Manage your keys
-Modify `twitter_key_model.py` with your own keys and save as `twitter_key.py`.
+Modify `keys_template.py` with your own keys and save as `keys.py`.
 
 ### 3. Set up a CRON job
 ```bash

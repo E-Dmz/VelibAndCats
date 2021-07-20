@@ -22,7 +22,7 @@ Modify `keys_template.py` with your own keys and save as `keys.py`.
 ```bash
 crontab -e
 # copy the following line: 
-# 0 6 * * * /path/to/python3 /absolute/path/to/WakeUp/WakeUp.py
+# 0 6 * * * python3 path/to/WakeUp/WakeUp.py
 # Ctrl + S Ctrl + X
 crontab -l
 # this one is helpful to check on cron jobs: 
